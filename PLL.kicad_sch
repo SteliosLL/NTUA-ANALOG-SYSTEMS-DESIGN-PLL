@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "ac247623-a02d-4cc5-be05-0b11086d5480")
-	(paper "A2")
+	(paper "A3")
 	(title_block
 		(title "PLL")
 	)
@@ -4311,6 +4311,12 @@
 		(uuid "280e15aa-2906-4eaa-872a-e8a0848a8457")
 	)
 	(junction
+		(at 356.87 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "293fe364-a16c-404f-ab6e-427b3a09ca3e")
+	)
+	(junction
 		(at 80.01 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5346,6 +5352,16 @@
 	)
 	(wire
 		(pts
+			(xy 356.87 118.11) (xy 363.22 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ec49856-ab9e-4f40-841a-22a9bf4c0b58")
+	)
+	(wire
+		(pts
 			(xy 215.9 200.66) (xy 198.12 200.66)
 		)
 		(stroke
@@ -5426,7 +5442,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 118.11) (xy 363.22 118.11)
+			(xy 353.06 118.11) (xy 356.87 118.11)
 		)
 		(stroke
 			(width 0)
@@ -5720,7 +5736,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "02c60131-a465-46ad-93e9-d0c48bab2a2a")
-		(property "Reference" "PWR_HEADER"
+		(property "Reference" "PWR_HEADER1"
 			(at 26.924 59.436 0)
 			(effects
 				(font
@@ -5772,7 +5788,7 @@
 		(instances
 			(project ""
 				(path "/ac247623-a02d-4cc5-be05-0b11086d5480"
-					(reference "PWR_HEADER")
+					(reference "PWR_HEADER1")
 					(unit 1)
 				)
 			)
@@ -9759,7 +9775,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm"
